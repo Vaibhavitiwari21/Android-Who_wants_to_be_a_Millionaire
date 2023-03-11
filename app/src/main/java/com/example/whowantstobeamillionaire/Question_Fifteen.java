@@ -98,6 +98,7 @@ public class Question_Fifteen extends AppCompatActivity {
                     // Change the background color of the selected RadioButton to green
                     radioButton.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
                     Intent winner = new Intent(Question_Fifteen.this, Winner.class);
+                    winner.putExtra("prize", totalMoney);
 
                     // Start the congratulations activity after 1 second delay
                     new Handler().postDelayed(new Runnable() {

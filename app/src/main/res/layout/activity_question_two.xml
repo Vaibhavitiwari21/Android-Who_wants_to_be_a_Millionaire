@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qbg"
+    tools:context=".Question_Two">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/scoreTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:text="Your Total Prize Money: "
+                    android:textSize="30dp"
+                    android:paddingBottom="40dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/Q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Q2. What makes balloons rise?"
+                    android:textAlignment="viewStart"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:id="@+id/R2Q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/Q1A1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hydrogen"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/Q1A2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Helium"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/Q1A3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oxygen"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/Q1A4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nitrogen"
+                        android:textSize="20dp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="32dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="32dp"
+                    android:paddingBottom="16dp">
+
+                    <Button
+                        android:id="@+id/btn_Q1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="Confirm" />
+
+                    <Button
+                        android:id="@+id/btn_Q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quit" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
